@@ -13,11 +13,21 @@
 <script type="text/jsx">
     const app = document.getElementById('app');
 
-    function Header(){
-        return(<h1>Develop. Preview. Ship. 🚀</h1>)
+    function Header({ title }){
+        console.log(title)
+        return <h1>{title}</h1>
     }
 
-    ReactDOM.render(<Header />, app)
+    function HomePage() {
+        return (
+            <div>
+                {/* Nesting the Header component */}
+                <Header title="React 💙" />
+            </div>
+        )
+    }
+
+    ReactDOM.render(<HomePage />, app)
 </script>
 </body>
 </html>
