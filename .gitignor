@@ -1,4 +1,3 @@
-/.idea/
-/.next/
+/.idea
+/.next
 /node_modules
-.
